@@ -1,90 +1,38 @@
-# 🌌 Sky Pointer – Gesture Controlled Pointer!
+# Sky-Pointer + Jarvis
 
-Sky Pointer is a computer vision project that allows users to **control the cursor using hand gestures** instead of a physical mouse.  
-It uses **OpenCV**, **MediaPipe**, and **PyAutoGUI** to detect hand movements via a webcam and translate them into system cursor actions.
-
----
-
-## 🎯 Problem Statement 
-
-Traditional computer interaction relies heavily on physical input devices like a mouse or touchpad.  
-This project explores a more **natural and touchless interaction method** using **hand gestures** for pointer control.
+A Python-based AI project combining **Sky-Pointer** (hand gesture-controlled mouse) with **Jarvis**, a voice-controlled virtual assistant. Control your computer seamlessly using **hand gestures** and **voice commands**.
 
 ---
 
-## 💡 Proposed Solution  
+## Features
 
-- Use a **webcam** to capture real-time video.  
-- Detect **hand landmarks** using **MediaPipe Hands**.  
-- Map finger movements to **screen coordinates** with OpenCV.  
-- Simulate cursor actions (move, click, drag, scroll, volume/brightness control) using PyAutoGUI & Pycaw.  
+- **Sky-Pointer (Hand Gesture Control)**
+  - Move the mouse pointer using hand gestures.
+  - Click, scroll, and drag without a physical mouse.
 
----
+- **Jarvis (Voice Assistant)**
+  - Execute system commands via voice.
+  - Open websites, search on Google, play music, and more.
 
-## 🛠️ Tools & Technologies  
-
-- **Python 3.9
-- **OpenCV** – For video capture & image processing  
-- **MediaPipe** – For real-time hand tracking & gesture recognition  
-- **NumPy** – For calculations and transformations  
-- **PyAutoGUI** – For controlling mouse cursor and actions  
-- **PyCaw** – For controlling system audio (optional)  
-- **Screen Brightness Control** – For brightness adjustments (optional)  
+- **Integrated System**
+  - Switch between gesture control and voice commands.
+  - Automate tasks hands-free.
 
 ---
 
-## 📂 Project Structure  
+## Technologies Used
 
-```bash
-SkyPointer/
-│
-├── HandGesture.py         # Core hand tracking & gesture recognition
-├── VirtualMouse.py        # Main file for controlling cursor via webcam
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
+- **Python**
+- **OpenCV & MediaPipe** – Hand tracking
+- **PyAutoGUI** – Mouse automation
+- **SpeechRecognition & pyttsx3** – Voice commands & text-to-speech
+- **Webbrowser & OS modules** – Task automation
+- **Threading** – Multitasking between gestures and voice
 
+---
 
+## Installation
 
-🎮 How It Works
-
-✋ Hand Detection – Place your hand in front of the webcam.
-
-👉 Index Finger – Cursor movement.
-
-👌 Index + Thumb pinch – Left click.
-
-🖐 Two fingers up – Right click.
-
-✊ Closed fist – Drag.
-
-☝️ Volume/Brightness gestures – Control system volume or brightness.
-
-(Gestures may vary depending on implementation.)
-
-
-🌱 Future Enhancements
-
-🔐 Add custom gesture recognition.
-
-🎯 Improve accuracy with smoothing filters.
-
-🖥 Multi-hand control for more functionality.
-
-📱 Extend support for touchless interactions in AR/VR environments.
-
-
-
-🤝 Contributing
-
-Contributions are welcome! To contribute:
-
-Fork the repository
-
-Create a new branch (feature/your-feature-name)
-
-Commit your changes
-
-Push to your fork and open a Pull Request
-
-
-# Please star our repo for support
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AnandKumar1221/sky-pointer-jarvis-.git
